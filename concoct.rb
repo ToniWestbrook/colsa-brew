@@ -19,7 +19,9 @@ class Concoct < Formula
     ENV.prepend_create_path "PYTHONPATH", "#{HOMEBREW_PREFIX}/lib/python#{version}/site-packages"
 
     system "python", "setup.py", "install"
-#                     "--install-lib=#{libexec}/lib/python2.7/site-packages"
+
+    # Install supplementary scripts
+    libexec.install Dir["scripts"]
   end
 
   test do
