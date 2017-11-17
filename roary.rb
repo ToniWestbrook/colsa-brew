@@ -20,7 +20,10 @@ class Roary < Formula
     #                      "--prefix=#{prefix}"
     # system "cmake", ".", *std_cmake_args
     #system "make", "install" # if this fails, try separate make/make install steps
+    
+    # Allow roary to find its perl libs
     bin.install Dir["bin/*"]
+    lib.install Dir["lib/Bio"]
   end
 
   test do
