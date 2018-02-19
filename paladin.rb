@@ -5,8 +5,8 @@
 class Paladin < Formula
   desc ""
   homepage ""
-  url "https://github.com/twestbrookunh/paladin/archive/v1.4.0.tar.gz"
-  sha256 "c1e7c1c318bcc02872a7fca802e260d1dd2d989a4a55ff4d05143d317336232a"
+  url "https://github.com/twestbrookunh/paladin/archive/v1.4.1.tar.gz"
+  sha256 "91e918bdf6cc8f71029eb2836304a5395e77aa4246bf593f65017a3820e29ee1"
 
   #depends_on "cmake" => :build
   depends_on "homebrew/core/curl"
